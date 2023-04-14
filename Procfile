@@ -1,1 +1,1 @@
-Sukun: python3 Status.py
+Sukun: python3 Sukunbotstatus.py
