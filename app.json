@@ -1,0 +1,77 @@
+{
+    "name": "ミ★ 𝘴ᴜᴋᴜɴ ʙᴏᴛ 𝘴ᴛᴀᴛᴜ𝘴 ★彡",
+    "description": "Easy & powerful bot to check if your all Telegram bots are working or not. This bot status bot updates every 5 minutes & runs for 24x7 hours.",
+    "repository": "https://github.com/TeamSukun/Sukunbotstatus",
+    "keywords": [
+        "BotStatus",
+        "How to check your bots are alive or not",
+        "Up or down",
+        "Check status of bots",
+        "Telegram userbot",
+        "Pyrogram userbot",
+        "Team Sukun"
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+  "repository": "https://github.com/TeamSukun/Sukunchatgpt",
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "SESSION_STRING": {
+            "description": "A valid Pyrogram session string from @sukunxstringbot",
+            "required": true,
+            "value": ""
+        },
+        "BOT_LISTS": {
+            "description": "Your bot username list without '@' (Example: Groupcontrollertgbot Adventure_Robot CHATGPTAI_TG_BOT forcesubscribe12bot AllStringHack_Bot allString_gen_bot LifeGameTBot  Cccheakertgbot Jee_Neet_Study_Material_Bot)",
+            "required": true,
+            "value": "sukunmusicrobot"
+        },
+        "OWNER_USERNAME": {
+            "description": "Your  username list without '@' (Example: ITZ_legend_coder}",
+            "required": true,
+            "value": "cute_billa_hu"
+        },
+       "CHANNEL_ID": {
+            "description": "Your channel's or group's Telegram id (Example: -1001246808642)",
+            "required": true,
+            "value": "-1001744582513"
+        },
+       "GRP_ID":{
+            "description": "Your Group Id To Send Warnings.",
+            "required": true,
+            "value": "-1001744582513"
+       },
+       "MESSAGE_ID": {
+            "description": "Telegram id of message from your channel or group (Example: 10)",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ADMIN_IDS": {
+            "description": "Bot admin(s) id(s) (Example: 1357907531 2468097531 3579864213)",
+            "required": false,
+            "value": "1844390456 2057416872"
+        },
+        "TIME_ZONE": {
+            "description": "Your time zone (Example: Asia/Kolkata)",
+            "required": false,
+            "value": "Asia/Kolkata"
+        }  
+},
+"addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
