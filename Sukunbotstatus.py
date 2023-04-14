@@ -23,7 +23,7 @@ async def main_checker():
     async with app:
             while True:
                 print("Checking...")
-                xxx_teletips = f"<u>**💌 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {(await app.get_chat(CHANNEL_ID)).title} ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴄʜᴀɴɴᴇʟ**</u>\n\n 💘| <u>**ʀᴇᴀʟ ᴛɪᴍᴇ ʙᴏᴛ's sᴛᴀᴛᴜs 💗**</u>"
+                xxx_teletips = f"<u>**😻 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {(await app.get_chat(CHANNEL_ID)).title} ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴄʜᴀɴɴᴇʟ**</u>\n\n ❤️‍🔥 | <u>**ʀᴇᴀʟ ᴛɪᴍᴇ ʙᴏᴛ's sᴛᴀᴛᴜs 💌**</u>"
                 for bot in BOT_LISTS:
                     await asyncio.sleep(7)
                     try:
@@ -39,14 +39,14 @@ async def main_checker():
                         async for ccc in zzz_teletips:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_teletips += f"\n\n╭⎋ 🙈 **[{bot_info.first_name}](tg://user?id={bot_info.id})** ❤️\n╰⊚ **sᴛᴀᴛᴜs: ᴏғғʟɪɴᴇ 💔**"
+                            xxx_teletips += f"\n\n╭⎋ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n╰⊚ **sᴛᴀᴛᴜs: ᴏғғʟɪɴᴇ ❄**"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                              
-                                    await app.send_message(int(GRP_ID), f"**ᴇʟʟᴏ @{OWNER_USERNAME} ʙᴀʙʏ.\n┏━━━━━━━━━━━━━━━━━⊱\n┠ [{bot_info.first_name}](tg://user?id={bot_info.id}) ➺ ᴏғғʟɪɴᴇ** 💔\n┗━━━━━━━━━━━━━━━━━⊱\n\n ||🌚 ᴘᴏᴡᴇʀᴇᴅ ʙʏ @TeamSukun 🌝|| ",reply_markup=InlineKeyboardMarkup(
+                                    await app.send_message(int(GRP_ID), f"**ʜᴇʏ @{OWNER_USERNAME} \n[{bot_info.first_name}](tg://user?id={bot_info.id}) ʙᴏᴛ ᴏғғʟɪɴᴇ ʜᴀɪ. ᴀᴄᴄʜᴀ ʜᴜᴀ ᴅᴇᴋʜ ʟɪʏᴀ ᴍᴀɪɴᴇ.**",reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🙄 ᴏғғʟɪɴᴇ ʙᴏᴛ 💔", url=f"(tg://user?id={bot_info.id})"),
+                                InlineKeyboardButton("ᴏғғʟɪɴᴇ ʙᴏᴛ", url=f"(tg://user?id={bot_info.id})"),
                             ]
                         ]
                     )
@@ -56,14 +56,14 @@ async def main_checker():
                                         
                             await app.read_chat_history(bot)
                         else:
-                            xxx_teletips += f"\n\n╭⎋ 🙈 **[{bot_info.first_name}](tg://user?id={bot_info.id})** ❤️\n╰⊚ **sᴛᴀᴛᴜs: ᴏɴʟɪɴᴇ 🥵**"
+                            xxx_teletips += f"\n\n╭⎋ **[{bot_info.first_name}](tg://user?id={bot_info.id})**\n╰⊚ **sᴛᴀᴛᴜs: ᴏɴʟɪɴᴇ 🥵**"
                             await app.read_chat_history(bot)
                     except FloodWait as e:
                         ttm = re.findall("\d{0,5}", str(e))
                         await asyncio.sleep(int(ttm))
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_teletips += f"\n\n🫧 <u>ʟᴀsᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ:</u>\n┏━━━━━━━━━━━━━━━━━⊱\n┠ **ᴅᴀᴛᴇ & ᴛɪᴍᴇ: {last_update}**\n┠ **ᴛɪᴍᴇ ᴢᴏɴᴇ: ({TIME_ZONE})**\n┗━━━━━━━━━━━━━━━━━⊱\n\n<i><u>✌️ ʀᴇғʀᴇsʜᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴡɪᴛʜɪɴ 10 ᴍɪɴᴜᴛᴇs 😻.</u></i>\n\n<b>**๏ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{(await app.get_chat(CHANNEL_ID)).username} ๏**</b>"
+                xxx_teletips += f"\n\n✔️ <u>ʟᴀsᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ:</u>\n**ᴅᴀᴛᴇ & ᴛɪᴍᴇ: {last_update}**\n**ᴛɪᴍᴇ ᴢᴏɴᴇ: ({TIME_ZONE})**\n\n<i><u>♻️ ʀᴇғʀᴇsʜᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴡɪᴛʜɪɴ 10 ᴍɪɴᴜᴛᴇs.</u></i>\n\n<b>**๏ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @{(await app.get_chat(CHANNEL_ID)).username} ๏**</b>"
                 await app.edit_message_text(int(CHANNEL_ID), MESSAGE_ID, xxx_teletips)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(600)
